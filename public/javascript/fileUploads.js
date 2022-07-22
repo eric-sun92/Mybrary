@@ -1,5 +1,3 @@
-console.log('test')
-
 FilePond.registerPlugin(
     FilePondPluginImagePreview,
     FilePondPluginFileEncode,

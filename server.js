@@ -12,6 +12,9 @@ const expressLayouts = require('express-ejs-layouts')
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 
+const methodOverride = require('method-override')
+app.use(methodOverride('_method'))
+
 app.use(express.static('public'))
 // app.use(express.urlencoded({extended : true}))
 
