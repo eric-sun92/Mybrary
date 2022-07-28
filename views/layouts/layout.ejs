@@ -30,10 +30,15 @@
 
     <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script defer src="../javascript/fileUploads.js"></script>
+    <link id="main-css" rel="stylesheet" href="/stylesheets/main.css" />
     <title>Mybrary</title>
   </head>
   <body>
-    <%- include('../partials/header') %> <%-
-    include('../partials/errorMessage.ejs') %> <%- body %>
+    <div class="container">
+      <%- include('../partials/header') %>
+      <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %> <%- body %>
+      </div>
+    </div>
   </body>
 </html>
